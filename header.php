@@ -7,3 +7,8 @@
 </head>
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
+<header>
+  <nav>
+    <?php wp_nav_menu(array('theme_location' => 'primary')); ?>
+  </nav>
+</header>
