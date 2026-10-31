@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-  <meta charset="<?php bloginfo('charset'); ?>">
-  <?php wp_head(); ?>
-</head>
-<body <?php body_class(); ?>>
-  <?php wp_body_open(); ?>
+<?php get_header(); ?>
 
+<main>
   <?php
   if (have_posts()) :
       while (have_posts()) : the_post();
@@ -16,7 +10,6 @@
       _e('Sorry, no posts matched your criteria.', 'textdomain');
   endif;
   ?>
+</main>
 
-  <?php wp_footer(); ?>
-</body>
-</html>
+<?php get_footer(); ?>
