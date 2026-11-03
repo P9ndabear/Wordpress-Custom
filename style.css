@@ -9,6 +9,9 @@ body {
   color: #4a3626;
   font-family: Georgia, serif;
   line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1, h2, h3 {
@@ -78,6 +81,9 @@ nav .current-menu-item a {
 
 /* ---------- Inhoud ---------- */
 main {
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
   max-width: 900px;
   margin: 0 auto;
   padding: 32px 24px;
@@ -122,7 +128,7 @@ article h3 a:hover {
 
 article img {
   width: 100%;
-  height: auto;
+  height: 600px;
   object-fit: cover;
 }
 

@@ -1,5 +1,5 @@
 <footer>
-  <p>&copy; <?php echo date('Y'); ?> Capybara Site</p>
+  <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
 </footer>
 <?php wp_footer(); ?>
 </body>
