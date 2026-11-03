@@ -2,6 +2,145 @@
 Theme Name: Capybara Theme
 */
 
+/* ---------- Algemeen ---------- */
 body {
-  background: lightgreen;
+  margin: 0;
+  background: #f5ecd9;
+  color: #4a3626;
+  font-family: Georgia, serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3 {
+  color: #5a3e28;
+  line-height: 1.25;
+}
+
+a {
+  color: #2f6b3a;
+}
+
+a:hover {
+  color: #1f4a28;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ---------- Header en menu ---------- */
+.site-header {
+  background: #5a3e28;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.site-title {
+  color: #f5ecd9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: #a8d5a2;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  color: #f5ecd9;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav .current-menu-item a {
+  background: #7a5a3c;
+  color: #ffffff;
+}
+
+/* ---------- Inhoud ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px 24px;
+}
+
+main > h1,
+main > section > h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+
+/* ---------- Artikelen als kaartjes ---------- */
+article {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(90, 62, 40, 0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(90, 62, 40, 0.18);
+}
+
+article h2,
+article h3 {
+  margin-top: 0;
+}
+
+article h2 a,
+article h3 a {
+  color: #5a3e28;
+  text-decoration: none;
+}
+
+article h2 a:hover,
+article h3 a:hover {
+  color: #2f6b3a;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* ---------- Enkel bericht ---------- */
+.single-post article:hover {
+  transform: none;
+}
+
+.single-post article img {
+  height: auto;
+  max-height: auto;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #5a3e28;
+  color: #f5ecd9;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
