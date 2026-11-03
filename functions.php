@@ -1,5 +1,3 @@
-
-Functions · PHP
 <?php
 // Thema-instellingen en features
 function capybara_setup() {
@@ -18,17 +16,8 @@ function capybara_setup() {
 }
 add_action('after_setup_theme', 'capybara_setup');
  
-// CSS en JS laden
+// CSS laden
 function capybara_scripts() {
   wp_enqueue_style('capybara-style', get_stylesheet_uri());
- 
-  wp_enqueue_script(
-    'capybara-script',
-    get_template_directory_uri() . '/js/main.js',
-    array(),
-    '1.0',
-    true
-  );
 }
 add_action('wp_enqueue_scripts', 'capybara_scripts');
- 
